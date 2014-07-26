@@ -11,6 +11,9 @@ deploy:
   provider: releases
   api_key:
     secure: FFqCSd6UFDTIOYJY+AFYCL8TxP3oi1potdPulzq2tRUhCU3+GU0vFTF996bId0yfQHpTccE/MMBIa7aaZSjwPlPG5aNzol1Kkz+UqtSBFg+bsKXZ+8ILWIVPKQRittBHi0iLku0ufg1VL3W8BhJgYdjBZETU5e60zfiK4UNC7yc=
-  file: vw
+  file: 
+    - vowpalwabbit/vw
+    - vowpalwabbit/active_interactor
+    - cluster/spanning_tree
   on:
     repo: arshak/vowpal_wabbit
