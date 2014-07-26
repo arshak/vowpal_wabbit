@@ -1,9 +1,16 @@
 language: cpp
 compiler:
-  - gcc
+- gcc
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq libboost-all-dev
-install: 
-  - make
+- sudo apt-get update -qq
+- sudo apt-get install -qq libboost-all-dev
+install:
+- make
 script: make test
+deploy:
+  provider: releases
+  api_key:
+    secure: FFqCSd6UFDTIOYJY+AFYCL8TxP3oi1potdPulzq2tRUhCU3+GU0vFTF996bId0yfQHpTccE/MMBIa7aaZSjwPlPG5aNzol1Kkz+UqtSBFg+bsKXZ+8ILWIVPKQRittBHi0iLku0ufg1VL3W8BhJgYdjBZETU5e60zfiK4UNC7yc=
+  file: vw
+  on:
+    repo: arshak/vowpal_wabbit
