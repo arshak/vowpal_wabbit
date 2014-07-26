@@ -17,3 +17,5 @@ deploy:
     - cluster/spanning_tree
   on:
     repo: arshak/vowpal_wabbit
+    tags: true
+    all_branches: true
